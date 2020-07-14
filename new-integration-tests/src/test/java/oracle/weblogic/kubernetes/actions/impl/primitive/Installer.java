@@ -204,7 +204,7 @@ public class Installer {
       }
 
       if (version != null) {
-        actualLocation = location.replace("latest", version);
+        actualLocation = location.replace("latest", "download/" + version);
       }
     }
     getLogger().info("the actualdownload location is {0}.", actualLocation);
